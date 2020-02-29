@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "6e422334-1bac-4028-91c8-cc041f4ff4cc",
+		"name": "ICT Forma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lista Prenotazioni",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"studente\": \"Mario Bianchi\",\n  \"classe\": \"5BIT\",\n  \"ritiro\": \"2020-03-06\",\n  \"panini\": [1]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ictforma.yakky.dev/api/v1/prenotazioni/",
+					"protocol": "https",
+					"host": [
+						"ictforma",
+						"yakky",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prenotazioni",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crea Prenotazione",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"studente\": \"Mario Bianchi\",\n  \"classe\": \"5BIT\",\n  \"ritiro\": \"2020-03-06\",\n  \"panini\": [1]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ictforma.yakky.dev/api/v1/prenotazione/",
+					"protocol": "https",
+					"host": [
+						"ictforma",
+						"yakky",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prenotazione",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Panini",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ictforma.yakky.dev/api/v1/panini/",
+					"protocol": "https",
+					"host": [
+						"ictforma",
+						"yakky",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"panini",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

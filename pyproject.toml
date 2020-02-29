@@ -1,0 +1,5 @@
+[tool.black]
+line-length = 119
+target-version = ['py37']
+include = '/(corso_python|panino)/.*\.pyi?$'
+exclude = '/(\.eggs|\.git|\.hg|\.mypy_cache|\.nox|\.tox|\.venv|_build|buck-out|build|dist|\.env)/'
